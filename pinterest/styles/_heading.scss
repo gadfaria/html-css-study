@@ -19,12 +19,16 @@
       top: 0;
       left: 0;
       transform: translateX(-50%);
-    }
-    .text {
-      white-space: nowrap;
-      color: $red;
 
-      transition-duration: 1s;
+      @for $i from 1 through 4 {
+        &:nth-child(#{$i}) {
+          .text {
+            white-space: nowrap;
+            color: nth($colors, $i);
+            transition-duration: 1s;
+          }
+        }
+      }
     }
   }
 }

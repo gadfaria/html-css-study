@@ -146,9 +146,30 @@ header nav .buttons .signup {
           transform: translateX(-50%);
 }
 
-.heading .wrapper .text {
+.heading .wrapper .offset:nth-child(1) .text {
   white-space: nowrap;
   color: #e60023;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.heading .wrapper .offset:nth-child(2) .text {
+  white-space: nowrap;
+  color: #618c7b;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.heading .wrapper .offset:nth-child(3) .text {
+  white-space: nowrap;
+  color: #c28b00;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.heading .wrapper .offset:nth-child(4) .text {
+  white-space: nowrap;
+  color: #0b76d3;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
@@ -175,6 +196,38 @@ header nav .buttons .signup {
   max-height: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.grid:nth-child(1) .item {
+  width: 236px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: #e60023;
+}
+
+.grid:nth-child(2) .item {
+  width: 236px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: #618c7b;
+}
+
+.grid:nth-child(3) .item {
+  width: 236px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: #c28b00;
+}
+
+.grid:nth-child(4) .item {
+  width: 236px;
+  height: 350px;
+  border-radius: 10px;
+  background-color: #0b76d3;
+}
+
+.grid .item:not(:first-child) {
+  margin-top: 16px;
 }
 
 .grid.active {
@@ -239,16 +292,5 @@ header nav .buttons .signup {
   -webkit-transition-delay: 1.2s;
           transition-delay: 1.2s;
   margin-top: 0px;
-}
-
-.item {
-  width: 236px;
-  height: 350px;
-  background-color: #e60023;
-  border-radius: 10px;
-}
-
-.item:not(:first-child) {
-  margin-top: 16px;
 }
 /*# sourceMappingURL=styles.css.map */
